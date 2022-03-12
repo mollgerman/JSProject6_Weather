@@ -13,7 +13,7 @@ let weather = {
         .then((data) => this.displayWeather(data));
     },
     displayWeather: function (data) {
-        const { temp } = data.list[0].main;
+        const { temp } = data.list[0].main; 
         const { name } = data.list[0];
         const { main, description, icon } = data.list[0].weather[0];
         document.querySelector(".city").innerHTML = name;
