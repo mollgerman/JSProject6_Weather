@@ -1,0 +1,58 @@
+$padding-inside: 0px 0px 0px 10px;
+    
+body 
+    
+    width: 100%
+    height: 100%
+    margin: 0
+    color: white
+    text-shadow: 1px 2px black
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+
+    .container
+        display: flex
+        justify-content: center
+        align-items: flex-start;
+        width: 24vw
+        height: 50vh
+        background-color: #21222298 
+        border-radius: 1rem
+        box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.651)
+        flex-flow: column
+        padding: $padding-inside
+        .search
+            order: 0
+            position: relative
+            top: -25
+            .search-bar
+                width: 17.5vw
+                
+        .city
+            font-size: 2.5rem
+        .temp
+            font-size: 3rem
+        .description
+            display: flex
+            align-content: center
+        .state
+            font-size: 2rem
+            float: right
+            margin-top: 6px
+
+        .sub-state
+            font-size: 1.1rem
+            text-transform: capitalize
+            margin: 0px 0px 0px 0px
+        .icon
+            padding: 0px 10px 0px 0px
+
+        input:hover
+            box-shadow: 0px 0px 1px 1px black
+input
+    height: 1.5rem
+    border: none
+    border-radius: 1rem
+    
