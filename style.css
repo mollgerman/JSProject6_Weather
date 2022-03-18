@@ -20,18 +20,12 @@ body .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 24vw;
-  height: 50vh;
+  width: 80vw;
+  height: 100vh;
   background-color: #21222298;
-  border-radius: 1rem;
-  -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.651);
-          box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.651);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
@@ -39,27 +33,52 @@ body .container {
   padding: 0px 0px 0px 10px;
 }
 
-body .container .search {
+body .container .current {
+  border: 1px solid black;
+}
+
+body .container .current .search {
+  margin-top: 30px;
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
-  position: relative;
-  top: -25;
 }
 
-body .container .search .search-bar {
-  width: 17.5vw;
+body .container .current .search .search-bar {
+  width: 370px;
 }
 
-body .container .city {
-  font-size: 2.5rem;
+body .container .current .search .results {
+  width: 370px;
+  height: auto;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.397);
 }
 
-body .container .temp {
+body .container .current .search .results .places {
+  padding: 10px 0px 10px 10px;
+  cursor: pointer;
+}
+
+body .container .current .search .results .places:hover {
+  background-color: rgba(114, 112, 112, 0.548);
+}
+
+body .container .current .search .hide-results {
+  visibility: hidden;
+  height: 0;
+}
+
+body .container .current .city {
+  font-size: 1.5rem;
+  margin: 40px 0px 10px 0px;
+}
+
+body .container .current .temp {
   font-size: 3rem;
 }
 
-body .container .description {
+body .container .current .description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,25 +86,37 @@ body .container .description {
       align-content: center;
 }
 
-body .container .state {
+body .container .current .state {
   font-size: 2rem;
   float: right;
   margin-top: 6px;
 }
 
-body .container .sub-state {
+body .container .current .sub-state {
   font-size: 1.1rem;
   text-transform: capitalize;
-  margin: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 20px;
 }
 
-body .container .icon {
+body .container .current .icon {
   padding: 0px 10px 0px 0px;
 }
 
-body .container input:hover {
+body .container .current input:hover {
   -webkit-box-shadow: 0px 0px 1px 1px black;
           box-shadow: 0px 0px 1px 1px black;
+}
+
+body .container .hourly {
+  border: 1px solid black;
+  width: 500px;
+  height: 170px;
+}
+
+body .container .daily {
+  border: 1px solid black;
+  width: 500px;
+  height: 170px;
 }
 
 input {

@@ -14,43 +14,66 @@ body
 
     .container
         display: flex
-        justify-content: center
-        align-items: flex-start;
-        width: 24vw
-        height: 50vh
+        align-items: flex-start
+        width: 80vw
+        height: 100vh
         background-color: #21222298 
-        border-radius: 1rem
-        box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.651)
         flex-flow: column
         padding: $padding-inside
-        .search
-            order: 0 
-            position: relative
-            top: -25
-            .search-bar
-                width: 17.5vw
-                
-        .city
-            font-size: 2.5rem
-        .temp
-            font-size: 3rem
-        .description
-            display: flex
-            align-content: center
-        .state
-            font-size: 2rem
-            float: right
-            margin-top: 6px
+        .current
+            border: 1px solid black
+            .search
+                margin-top: 30px
+                order: 0 
+                .search-bar
+                    width: 370px
+                .results
+                    width: 370px
+                    height: auto
+                    //border: 1px solid white
+                    border-radius: 0.5rem
+                    background-color: rgba(255, 255, 255, 0.397)
+                    .places
+                        padding: 10px 0px 10px 10px
+                        //margin: 5px 0px 5px 5px
+                        cursor: pointer
+                    .places:hover
+                        background-color: rgba(114, 112, 112, 0.548)
 
-        .sub-state
-            font-size: 1.1rem
-            text-transform: capitalize
-            margin: 0px 0px 0px 0px
-        .icon
-            padding: 0px 10px 0px 0px
+                .hide-results
+                    visibility: hidden 
+                    height: 0
+            .city 
+                font-size: 1.5rem
+                margin: 40px 0px 10px 0px
+            .temp
+                font-size: 3rem
+            .description
+                display: flex
+                align-content: center
+            .state
+                font-size: 2rem
+                float: right
+                margin-top: 6px
 
-        input:hover
-            box-shadow: 0px 0px 1px 1px black
+            .sub-state
+                font-size: 1.1rem
+                text-transform: capitalize
+                margin: 0px 0px 0px 20px
+
+            .icon
+                padding: 0px 10px 0px 0px
+
+            input:hover
+                box-shadow: 0px 0px 1px 1px black
+        .hourly
+            border: 1px solid black
+            width: 500px
+            height: 170px 
+        .daily
+            border: 1px solid black
+            width: 500px
+            height: 170px   
 input
     height: 1.5rem
     border: none

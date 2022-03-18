@@ -8,19 +8,25 @@
 </head>
 <body>
     <div class="container"> 
-        <div class="search">
-            <input class="search-bar" type="text" placeholder="Search city">
-            <input type="submit" onclick="weather.fetchWeather()" value="Search">
-            
+        <div class="current">
+            <h1>Weather</h1>
+            <div class="search">
+                <input class="search-bar" type="text" placeholder="Search city">
+                <input type="submit" onclick="weather.fetchWeatherByCity()" value="Search">
+                <div class="results hide-results">
+
+                </div>
+            </div>
+            <div class="city"></div>
+            <div class="temp"></div>
+            <div class="description">
+                <img class="icon" src="" alt="">
+                <div class="state"></div>
+            </div>
+            <div class="sub-state"></div>
         </div>
-        <div class="city"></div>
-        <div class="temp"></div>
-        <div class="description">
-            <img class="icon" src="" alt="">
-            <div class="state"></div>
-        </div>
-        
-        <div class="sub-state"></div>
+        <div class="hourly"></div>
+        <div class="daily"></div>
     </div>
     <script src="Weather.js"></script>
 </body>
